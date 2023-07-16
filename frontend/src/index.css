@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:  'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(56, 56, 56);
+  color: rgb(215, 215, 215);
+}
+input:-internal-autofill-selected,
+input:-webkit-autofill {
+  background-color: transparent!important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 58px;
+  color: rgb(238, 238, 238);
 }
+
+.framerSearchTerms{
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+#framerSearchTerms{
+  background-color: transparent!important;
+  border: 1px solid #ffce18;
+  padding: 10px;
+  font-size: 18px;
+  width: 300px;
+  color: #ffce18;
+  outline: none;
+}
+
+#framerSubmit{
+  background-color: #ffce18;
+  border: 0;
+  width: 322px;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.folderInfo {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.status{
+  margin: 10px auto
+}
+.objectMatches{
+  margin: 20px auto 0;
+}
+
+.status .success *,
+.objectMatches * {
+  color: #59c029;
+} 

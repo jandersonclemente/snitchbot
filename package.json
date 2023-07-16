@@ -1,0 +1,23 @@
+{
+  "name": "snitchbot",
+  "version": "0.0.1",
+  "description": "snitchbot starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && node app\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jandersonclemente/snitchbot.git"
+  },
+  "author": "Janderson Clemente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jandersonclemente/snitchbot/issues"
+  },
+  "homepage": "https://github.com/jandersonclemente/snitchbot#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
