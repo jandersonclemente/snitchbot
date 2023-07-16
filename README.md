@@ -1,6 +1,6 @@
 # snitchbot #
 
-This os a very simples prove of concept. It consists in a React frontend that is running the Tensorflow's *coco-ssd* model and a NodeJS backend that ingest a mp4 video and slice it into frames to deliver to the frontend app.
+This is a very simples prove of concept. It consists in a React frontend that is running the Tensorflow's *coco-ssd* model and a NodeJS backend that ingest a mp4 video and slice it into frames to deliver to the frontend app.
 
 ## Requirements ##
 Besides the dependencies into the three *package.json* files (frontend, backend and starter), you'll need to have ffmpeg running in your machine.
