@@ -23,6 +23,13 @@ const frameVideo = async () => {
 const imageRecognition = async framesArray => {
     const predictionsText = []
     const objectsFound = []
+ 
+    if (!framesArray) {
+        return {
+            predictionsText,
+            objectsFound
+        }
+    }
 
     for (const frameUrl of framesArray) {
         const currentImage = new Image()

@@ -2,6 +2,8 @@ const ffmpeg = require('fluent-ffmpeg')
 const path = require('path')
 const fs = require('fs')
 
+const settings = require('./settings')
+
 function deleteDirectoryContents(directoryPath) {
     const files = fs.readdirSync(directoryPath)
   
@@ -22,12 +24,10 @@ function getDirectoryContents(directoryPath) {
     return fs.readdirSync(directoryPath)
 }
 
+
 const framer = async () => {
-    //TO DO
-    //move to settings file
-    const fps = 1
-    const video = 'sample.mp4'
-    //
+    const fps = settings.fps
+    const video = settings.videoFile
 
     const videoPath = `${__dirname}/ingest/${video}`
     const framesDirectory = `${__dirname}/../frontend/public/frames`
